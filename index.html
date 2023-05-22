@@ -28,10 +28,10 @@
             <address class="contact-link">
                 <ul class="list contact-link">
                     <li>
-                        <a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="contact-mail link contact-transition" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li>
-                        <a class="contact-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        <a class="contact-mail link contact-transition" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
@@ -41,7 +41,7 @@
         <section class="main-page conteiner">
             <div class="conteiner">
                 <h1 class="main-header">Effective Solutions for Your Business</h1>      
-                <button class="order-button" type="button">Order Service</button>
+                <button class="order-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="content-page">
@@ -266,8 +266,8 @@
                 </ul>
             </div>
         </section>
-        <section class="container content-page">
-            <div class="container">
+        <section class="conteiner content-page">
+            <div class="conteiner">
                 <h2 class="secondary-header service">Customers</h2>
                 <ul class="list customer-list">
                     <li class="customer-item">
@@ -318,16 +318,15 @@
     </main>
     <footer class="footer-bgd conteiner">
         <div class="footer-div">
-            <div class="footer-box-logo">
+            <div class="conteiner footer-box-logo">
                 <a class="logo link footer-link" href="./index.html" title="WebStudio">
                     Web<span class="logo-footer-studio">Studio</span>
                 </a>
-                <p class="footer-content">Increase the flow of customers and sales for your business with digital marketing &
-                    growth
+                <p class="footer-content">Increase the flow of customers and sales for your business with digital marketing & growth
                     solutions.
                 </p>
             </div>
-            <div class="footer-box-media">
+            <div class="conteiner footer-box-media">
                 <p class="media-header">Social media</p>
                 <ul class="media-list-ft">
                     <li class="media-round-card">
@@ -362,5 +361,13 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg width="8" height="8" class="close-button-svg"><use href="./images/icons.svg#icon-close"></use></svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 </html>
